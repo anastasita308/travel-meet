@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <h1>Hi, {{ current_user.username }}!</h1>
+    <form action="" method="POST"></form>
+
+    {% for post in posts %}
+    {% include '_post.html' %}
+    {% endfor %}
+
+</div>
+{% endblock content %}
+

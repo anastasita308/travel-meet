@@ -1,0 +1,11 @@
+flask
+flask_sqlalchemy
+flask_bcrypt
+flask_login
+Pillow
+flask_wtf
+wtforms
+email_validator
+pymysql
+cryptography
+flask-unittest

@@ -1,0 +1,287 @@
+/* Import font */
+@import url('http://fonts.cdnfonts.com/css/yaldevi-colombo');
+
+/* Custom properties */
+:root{
+    --light-color: #D9D9D9;
+    --light-color-alt: #afb6cd;
+    --primary-background-color: #F8F9FB;
+    --secondary-background-color: #252830;
+    --hover-light-color: var(--light-color);
+    --hover-dark-color: var(--primary-background-color);
+    --font-family: 'Yaldevi Colombo', sans-serif;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.0rem;
+    --font-size-lg: 2.5rem;
+    --font-size-xl: 4rem;
+    --gap: 2rem;
+    --margin-sm: 2rem;
+}
+
+/* Base styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 70%;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-md);
+    color: #353232;
+    background-color: var(--primary-background-color);
+    letter-spacing: 1px;
+    margin-top: 5rem;
+}
+
+legend, .btn{
+    font-size: inherit;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+a.hover-dark:hover{
+    color: var(--secondary-background-color);
+}
+
+ul{
+    list-style: none;
+}
+
+/* Navigation bar */
+a.navbar-brand.mr-4{
+    font-size: var(--font-size-md);
+    font-family: 'Yaldevi Colombo Medium', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+}
+
+nav.bg-steel{
+    background-color: var(--secondary-background-color);
+}
+
+.nav-item {
+    padding: 0.5rem 1.25rem !important;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+    color: var(--light-color);;
+}
+
+/* Main */
+main {
+    padding: 5rem;
+}
+
+/* About Page */
+.about-page{
+    height: 80vh;
+}    
+
+/* Buttons */
+.btn-outline-info {
+    color: #C92A2A;
+    border-color: #C92A2A;
+}
+
+.btn-outline-info:hover {
+    background-color: #C92A2A;
+    color: var(--primary-background-color);
+    border-color: #C92A2A;
+}
+
+.btn-info {
+    color: var(--secondary-background-color);
+    border-color: var(--secondary-background-color);
+    background-color: transparent;
+}
+
+.btn-info:hover {
+    background-color: var(--secondary-background-color);
+    color: var(--primary-background-color);
+    border-color: var(--secondary-background-color);
+}
+
+/* Post section */
+.media.content-section {
+    background: #F8F9FB;
+    padding: 0.625rem 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 0.1rem solid;
+    border-color: #8F8F8F;
+    border-radius: 1rem;
+}
+
+.article-title {
+    color: #444444;
+    font-weight: 600;
+}
+
+a.article-title:hover {
+    color: #C92A2A;
+    text-decoration: none;
+}
+
+a.username-link.mr-2:hover{
+    color: #C92A2A;
+    text-decoration: none;
+}
+
+.article-content {
+    white-space: pre-line;
+}
+
+.article-img {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.article-svg {
+    width: 1.625rem;
+    height: 1.625rem;
+    vertical-align: middle;
+}
+
+.account-img {
+    height: 16rem;
+    width: 16rem;
+    margin-right: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.account-heading {
+    font-size: 2.5rem;
+}
+
+.mr-2 {
+    font-size: 1.875rem;
+    text-transform: capitalize;
+}
+
+.comment-img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.posted-comment {
+    border: solid 1px grey;
+    padding: 0.5rem;
+    width: 83%;
+    border-radius: 0.25rem;
+    background-color: #F8F8F8;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--secondary-background-color);
+    color: var(--primary-background-color);
+    padding: 1.875rem;
+    font-size: var(--font-size-sm);
+    margin-bottom: 0;
+}
+
+.col-sm{
+    padding: 0.625rem;
+}
+
+.copyright-notice{
+    opacity: .8;
+}
+
+.footer-title{
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    margin-bottom: var(--margin-sm);
+    color: var(--primary-background-color);
+}
+
+.user-heading {
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    text-shadow: 2px 2px #b2beb5;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.user-about-me {
+    font-style: italic;
+}
+
+.underlined-link {
+    text-decoration: underline;
+    color: #C92A2A;
+}
+
+/* iframe */
+iframe{
+   height: 500px;
+   width: 600px;
+}
+
+/* Media query */
+@media screen and (max-width: 540px){
+   body{
+       font-size:var(--font-size-sm);
+   }
+
+   .article-img {
+       height: 3.125rem;
+       width: 3.125rem;
+   }
+
+  a.username-link.mr-2{
+      font-size: 2.5rem;
+  }
+
+  .account-img {
+      height: 6.25rem;
+      width: 6.25rem;
+  }
+    
+  iframe{
+      height: 200px;
+      width: 100px;
+  }  
+}
+
+
+@media screen and (max-width: 690px) {
+/* iframe */
+   iframe{
+      height: 350px;
+      width: 450px;
+  }
+}

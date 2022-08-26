@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="" method="POST">
+    {{ form.csrf_token }}
+    <div class="form-group search-page">
+        {{ form.query.label(class='form-control-label') }}:
+        {{ form.query(class='form-control-lg col-8') }}
+    </div>
+    {{ form.submit(class='btn btn-outline-info') }}
+</form>
+
+{% if posts %}
+{% for post in posts %}
+<div class="card-body">
+    <h2>Post: {{ post.title }}</h2>
+    <a href="{{ url_for('post', post_id=post.id) }}" class="btn btn-info">Show</a>
+</div>
+{% endfor %}
+{% endif %}
+{% endblock content %}
